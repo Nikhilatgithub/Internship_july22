@@ -1,0 +1,9 @@
+class Solution:
+    def busyStudent( startTime, endTime, queryTime):
+        ans=0
+        m=zip(startTime, endTime)
+        for s, e in m:
+            if s<=queryTime<=e:
+                ans+=1
+        return ans
+Solution.busyStudent([1,2,3],  [3,2,7],  4)

@@ -1,0 +1,10 @@
+class Solution:
+    def shuffle(nums, n):
+        result = []
+        for i in range(int(len(nums)/2)):
+            result.append(nums[i])
+            result.append(nums[i+int(len(nums)/2)])
+        return result
+arr=[1,2,3,3,2,1]
+no=3
+Solution.shuffle(arr,no)

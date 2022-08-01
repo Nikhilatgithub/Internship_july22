@@ -1,0 +1,11 @@
+class Solution(object):
+    exampl=[555,901,482,1771]
+
+    def findEven(f):
+        count=0
+        for i in f:
+            if len(str(i))%2==0:
+                count+=1
+        return count
+
+print(Solution.findEven(Solution.exampl))

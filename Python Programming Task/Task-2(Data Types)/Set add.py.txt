@@ -1,0 +1,12 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+def distinct_stamps(n):
+    stamp = set()
+    while n > 0:
+        stamp.add( raw_input() )
+        n-=1
+    return stamp
+
+
+if __name__ == '__main__':
+    n = int( raw_input() )
+    print( len(distinct_stamps(n)) )
